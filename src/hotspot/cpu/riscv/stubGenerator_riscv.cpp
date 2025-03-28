@@ -1669,6 +1669,9 @@ class StubGenerator: public StubCodeGenerator {
       __ xorr(c_rarg2, c_rarg1, c_rarg2);
       __ xorr(c_rarg1, c_rarg1, c_rarg2);
 
+      // Mark remaining code as such which performs Unsafe accesses.
+      UnsafeMemoryAccessMark umam(this, true, false);
+
       __ leave();    // Clear effect of enter()
       __ j(RuntimeAddress(unsafe_byte_fill));
 
