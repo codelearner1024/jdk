@@ -219,22 +219,22 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
 
     This option can be used multiple times.
 
-    Value can contain substrings that will be substituted at runtime.
-    jpackage supports two types of such substrings: environment
-    variables and "APPDIR", "BINDIR", and "ROOTDIR" tokens.
+    Value can contain substrings that will be expanded at runtime.
+    Two types of such substrings supported: environment variables
+    and "APPDIR", "BINDIR", and "ROOTDIR" tokens.
 
-    A substitutable substring should be enclosed between the dollar
+    A expandable substring should be enclosed between the dollar
     sign character ($) and the first following non-alphanumeric
     character. Alternatively, it can be enclosed between "${" and "}"
     substrings.
 
-    Substitutable substrings are case-sensitive on Unix and
+    Expandable substrings are case-sensitive on Unix and
     case-insensitive on Windows. No string substitution occurs if the
     referenced environment variable is undefined.
 
     Environment variables with names "APPDIR", "BINDIR", and "ROOTDIR"
-    will be ignored, and these substitutable substrings will be
-    replaced by values calculated by jpackage app launcher.
+    will be ignored, and these expandable substrings will be
+    replaced by values calculated by the app launcher.
 
     Prefix the dollar sign character with the backslash character (\)
     to prevent substring substitution.
@@ -246,7 +246,7 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
     This option can be used multiple times.
 
     Value can contain substrings that will be substituted at runtime
-    in the same way as for the `--arguments` option.
+    in the same way as for the --arguments option.
 
 <a id="option-main-class">`--main-class` *class-name*</a>
 
