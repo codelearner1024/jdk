@@ -220,10 +220,10 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
     This option can be used multiple times.
 
     Value can contain substrings that will be expanded at runtime.
-    Two types of such substrings supported: environment variables
+    Two types of such substrings are supported: environment variables
     and "APPDIR", "BINDIR", and "ROOTDIR" tokens.
 
-    A expandable substring should be enclosed between the dollar
+    An expandable substring should be enclosed between the dollar
     sign character ($) and the first following non-alphanumeric
     character. Alternatively, it can be enclosed between "${" and "}"
     substrings.
@@ -245,8 +245,8 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
 
     This option can be used multiple times.
 
-    Value can contain substrings that will be substituted at runtime
-    in the same way as for the --arguments option.
+    Value can contain substrings that will be substituted at runtime,
+    such as for the --arguments option.
 
 <a id="option-main-class">`--main-class` *class-name*</a>
 
