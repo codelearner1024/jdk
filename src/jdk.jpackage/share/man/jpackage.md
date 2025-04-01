@@ -229,7 +229,7 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
     substrings.
 
     Expandable substrings are case-sensitive on Unix and
-    case-insensitive on Windows. No string substitution occurs if the
+    case-insensitive on Windows. No string expansion occurs if the
     referenced environment variable is undefined.
 
     Environment variables with names "APPDIR", "BINDIR", and "ROOTDIR"
@@ -237,7 +237,7 @@ The `jpackage` tool will take as input a Java application and a Java run-time im
     replaced by values calculated by the app launcher.
 
     Prefix the dollar sign character with the backslash character (\)
-    to prevent substring substitution.
+    to prevent substring expansion.
 
 <a id="option-java-options">`--java-options` *options*</a>
 
